@@ -1,0 +1,121 @@
+.card-body{
+    overflow-x: scroll !important;
+}
+.font-11{
+    font-size: 1.1rem !important;
+}
+.font-12{
+    font-size: 1.2rem !important;
+}
+.font-13{
+    font-size: 1.3rem !important;
+}
+.font-14{
+    font-size: 1.4rem !important;
+}
+.font-15{
+    font-size: 1.5rem !important;
+}
+.font-16{
+    font-size: 1.6rem !important;
+}
+/* #cke_editor{
+    width: 92% !important;
+}
+#cke_23{
+    display: none !important;
+}
+#cke_25{
+    display: none !important;
+}
+#cke_27{
+    display: none !important;
+}
+#cke_48{
+    display: none !important;
+}
+.child-icon{
+    transform: rotate(90deg) !important;
+    display: inline-block !important;
+}
+#cke_editor1{
+    width: 88%  !important;
+}
+#cke_editor2{
+    width: 88%  !important;
+}
+#cke_editor3{
+    width: 88%  !important;
+}
+#cke_editor4{
+    width: 88%  !important;
+}
+#cke_editor5{
+    width: 95%  !important;
+}
+#cke_editor6{
+    width: 95%  !important;
+} */
+/* Custom CSS */
+/*.sidebar.os-host.os-theme-light.os-host-resize-disabled.os-host-scrollbar-horizontal-hidden.os-host-scrollbar-vertical-hidden.os-host-transition {*/
+/*    background: #046C41 !important;*/
+/*}*/
+.fertilizer_box tbody>tr{
+    border-bottom:1px dotted #ccc;
+}
+.fert_des{
+    display: inline-block;
+        position: relative;
+        background: rgb(11, 170, 91);
+        width: auto;
+        height: 60px;
+        top: 0;
+        left: 50px;
+        padding: 0 60px 0 10px;
+        line-height: 60px;
+        color: #ffffff;
+        font-size: 1.5rem;
+        min-width: 60% !important;
+        max-width: 96% !important;
+}
+.fert_des p{
+    font-size:1rem;
+    color:#e7e7e7;
+}
+.fert_des p>span{
+    /*font-size:1.1rem;*/
+    font-weight:bold;
+    color:#fff;
+}
+    .fert_des:before {
+        right: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(0, 0, 0, 0);
+        border-right-color: rgb(11, 170, 91);
+        border-width: 30px;
+        top: 50%;
+        margin-top: -30px;
+      }
+      .fert_des:after {
+        right: 0;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(66, 170, 225, 0);
+        border-right-color: #fff;
+        border-width: 30px;
+        top: 50%;
+        margin-top: -30px;
+      }
+
+    .font-light{
+        font-weight: 400 !important;
+    }

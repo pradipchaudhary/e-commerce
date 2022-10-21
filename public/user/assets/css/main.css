@@ -1,0 +1,1102 @@
+/* === Input Google fonts === */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+/* Global Virable  */
+:root {
+    --white-color: #e9f1f4;
+    --primary-color: #ff2625;
+    --secondary-color: #0912b9;
+    --gray-color: #efefef;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    color: #3d3d3d;
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    background-color: #fff;
+}
+
+/* === Btn Reset === */
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+button:hover,
+button:focus {
+    outline: none;
+}
+
+/* === Title CSS === */
+h4.title {
+    color: #484848;
+    font-size: 1.3rem;
+}
+
+/* =============================================
+    Login Form 
+================================================ */
+#login {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 4rem 0;
+}
+.login_form {
+    background: #fff;
+    min-width: 400px;
+    padding: 45px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.login_form h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.login_form .input-group {
+    position: relative;
+}
+.login_form .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+.login_form .input-group input:focus,
+.login_form .input-group input:target {
+    outline: none;
+    box-shadow: none;
+    /* border: none; */
+}
+.login_form .input-group label {
+    letter-spacing: 1px;
+    padding: 5px 0;
+    font-size: 16px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.login_form .icheck-primary {
+    margin-top: -15px;
+}
+
+.login_form button[type="submit"] {
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #d92906;
+    padding: 9px 35px;
+    margin-top: 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.login_form button[type="submit"]:hover {
+    background: #f32d05;
+}
+/* box-shadow: 0 -3px 12px 0 #000; */
+
+/* ================================================================
+    Top Wrap 
+=================================================================== */
+header {
+    padding: 0;
+    z-index: 99;
+    margin: 0;
+    clear: both;
+    border-radius: 0;
+    background: url(../img/background.jpg) scroll 0 0;
+    position: relative;
+    width: 100%;
+    /* height: 154px; */
+}
+header #top_wrap {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid #d9d9d9;
+    padding: 8px 0;
+}
+
+header #top_wrap .offer-title {
+    text-transform: capitalize;
+    color: #666;
+    font-size: 13px;
+    letter-spacing: 0px;
+}
+header #top_wrap .top-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header #top_wrap .top-links .link-item {
+    padding-left: 36px;
+    position: relative;
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+header #top_wrap .top-links .link-item:hover {
+    color: #ff2625;
+}
+header #top_wrap .top-links a.link-item:first-child::before {
+    content: "";
+}
+header #top_wrap .top-links a.link-item::before {
+    content: "|";
+    position: absolute;
+    left: 14px;
+    top: 0px;
+    color: #959595;
+}
+
+/* === Main Header === */
+header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 25px; */
+    padding: 25px 0;
+}
+header .header .logo a {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+header .header .logo img.brand-logo {
+    width: 36px;
+    margin-right: 15px;
+}
+header .header .logo .text h4 {
+    padding: 0;
+    margin: 0;
+    color: #c8132c;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+header .header .logo .text span {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+header .header .search_box {
+    display: flex;
+    justify-content: center;
+}
+header .header .search_box input {
+    min-width: 360px;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+header .header .search_box input:hover,
+header .header .search_box input:focus {
+    outline: none;
+    border: 1px solid #c5c5c5;
+}
+header .header .search_box button {
+    padding: 6px 15px;
+    background-color: #ff2625;
+    border: 1px solid #ff2625;
+    color: #efefef;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    letter-spacing: 1px;
+}
+header .header .header-info {
+    display: flex;
+}
+header .header .header-info .number,
+header .header .header-info .account {
+    display: flex;
+    justify-content: center;
+}
+header .header .header-info .number {
+    margin-right: 15px;
+}
+header .header .header-info .number .icon,
+header .header .header-info .account .icon {
+    margin: 1px 6px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 2px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+header .header .header-info .number span.text-number,
+header .header .header-info .account span.text-number {
+    font-size: 0.95rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    color: #2a2a2a;
+    display: block;
+}
+/* #top_wrap .top_login {
+    text-align: right;
+}
+#top_wrap .top_login a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#top_wrap .top_login a:hover {
+    color: var(--primary-color);
+    font-weight: 400;
+} */
+/* ==============================================================
+    Header 
+================================================================= */
+
+/* === Navbar === */
+#navbar {
+    background-color: #3b3b3b;
+    padding: 5px 0px;
+}
+
+#navbar li.nav-item a.active {
+    color: #fff;
+}
+#navbar li.nav-item a {
+    color: #eee;
+}
+#navbar li.nav-item {
+    font-size: 15px !important;
+    text-transform: capitalize;
+    padding: 0 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+/* === Grading === */
+
+#app .grading .grading-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4f5a63;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 0px;
+}
+#app .grading .grading-head .title-sec h4 {
+    color: #2a2a2a;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 24px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+#app .grading .grading-head .title-sec p {
+    margin: 0px;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 0.2px;
+}
+#app .grading .grading-head .shipped-by p {
+    font-size: 0.8rem;
+    margin: 0px;
+    letter-spacing: 0.1px;
+    color: #707070;
+}
+#app .grading .grading-head .shipped-by img.logo {
+    max-width: 100px;
+}
+
+#app .grading .grading_item {
+    border: 1px solid #e9e9e9;
+    padding: 0rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 5%);
+}
+#app .grading .grading_item .name {
+    margin-right: 3rem;
+    min-width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 1rem;
+}
+#app .grading .grading_item .name h1 {
+    font-size: 2rem;
+}
+#app .grading .grading_item .description .apperance,
+#app .grading .grading_item .description .screen,
+#app .grading .grading_item .description .housing {
+    padding-bottom: 4px;
+}
+#app .grading .grading_item .description {
+    padding: 1rem;
+    border-left: 1px solid #efefef;
+}
+#app .grading .grading_item .description b {
+    color: #000;
+}
+#app .grading .grading_item .description .img-gallerys a.gimg {
+    width: 80px;
+    height: 80px;
+    min-height: 80px;
+    min-width: 80px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #d7d7d7;
+    box-shadow: 0px 1px 4px 0px rgb(0, 0, 0, 5%);
+    background: #fff;
+}
+#app .grading .grading_item .description .img-gallerys .gimg img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+/* #app .grading .grading_item .description .img-gallerys .gimg img {
+    max-width: 160px;
+    width: 90px;
+    max-height: 160px;
+    height: 90px;
+    border: 1px solid #ddd;
+    margin: 5px 5px 0 0;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    object-fit: cover;
+    object-position: center;
+} */
+
+/* ===  Side Filter === */
+.side_filter {
+    padding: 10px;
+    padding-left: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+}
+.side_filter .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+}
+.side_filter .heading h4 {
+    font-size: 1.2rem;
+}
+.side_filter .heading .filter-clear {
+    color: #535252;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.side_filter .heading .filter-clear:hover {
+    color: #c90f1e;
+}
+.filter_subgroup h5.sub_filter_group_title {
+    font-size: 0.9rem;
+    color: #535252;
+    font-weight: 500;
+    margin-left: 4px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+/* === Filter Group === */
+.filter_group {
+    margin: 10px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+.filter_group:last-child {
+    border-bottom: none;
+}
+.filter_group h4.filter_group_name {
+    font-size: 1rem;
+    color: #2c2c2c;
+}
+.filter_group .filter_body {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+/* === Main Content === */
+.main_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    /* border: 1px solid rgba(0, 0, 0, 0.125); */
+    border-radius: 0.25rem;
+    padding: 10px;
+}
+
+/* === Stock List ===  */
+
+/* === Accordion item === */
+.stock-list {
+    padding: 5px;
+}
+.stock-list .accordion .accordion-body {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid #dd1b3117;
+    background: #dd1b3117;
+}
+.stock-list .accordion .accordion-item .product_store_name {
+    font-size: 0.9rem;
+}
+.accordion .accordion-item {
+    /* border-bottom: 1px solid #eee; */
+    color: #2c2c2c;
+    border: none;
+}
+.stock-list-heading {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.accordion button.accordion-button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1.5em 0;
+    color: #2c2c2c;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    background: none;
+    outline: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    color: #2c2c2c;
+    /* background-color: red; */
+}
+
+.accordion .accordion-button::after {
+    margin-left: 0px;
+    color: #2c2c2c;
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+}
+.accordion .accordion-button:not(.collapsed)::after {
+    color: #2c2c2c;
+}
+
+.accordion button.accordion-button:hover,
+.accordion button.accordion-button:focus {
+    cursor: pointer;
+    color: #2c2c2c;
+    outline: none !important;
+    box-shadow: none;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+}
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.accordion > .accordion-heading button[aria-expanded="true"]:after {
+    content: "\2212";
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.accordion > .accordion-heading button[aria-expanded="false"]:after {
+    content: "\002b";
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+/* === Heading === */
+.accordion .accordion-button .product_name {
+    min-width: 60%;
+}
+.accordion .accordion-button .product_name span {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.accordion h2.accordion-header .product_price span,
+.accordion h2.accordion-header .product_qty span {
+    display: block;
+    font-size: 0.9rem;
+    color: #3f3f3f;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.accordion button[aria-expanded="true"] + .accordion-body {
+    opacity: 1;
+    max-height: 100%;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+/* === Button Design === */
+.accordion .accordion-body .btn {
+    display: inline-block;
+}
+.accordion .accordion-item .btn-buy {
+    border: 1px solid #389cff;
+    padding: 0px 10px;
+    color: #eee;
+    background: #389cff;
+    font-size: 0.8rem;
+    padding-bottom: 3px;
+    margin: 0px;
+}
+.accordion .accordion-item .btn-in-cart {
+    padding: 0px 10px;
+    color: #eee;
+    background: #106235;
+    font-size: 0.8rem;
+    padding-bottom: 3px;
+    margin: 0px;
+}
+
+.accordion .accordion-item .btn-offer {
+    border: 1px solid #eee;
+    padding: 0px 10px;
+    color: #fff;
+    background: #d31027;
+    font-size: 0.8rem;
+    padding-bottom: 3px;
+    margin: 0px;
+}
+.accordion .accordion-item .myalert {
+    color: #389cff;
+}
+
+/* Custom CSS for borderless */
+.borderless td,
+.borderless th {
+    border: none !important;
+    padding: 2px !important;
+}
+.borderless thead,
+.borderless tbody {
+    border: none !important;
+}
+.table_item {
+    width: 70%;
+}
+
+/* === Stock List Pagination === */
+nav .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+nav .pagination a.page-link {
+    cursor: pointer;
+}
+nav li.page-item {
+    margin: 0 10px;
+}
+/* === Card Checkout === */
+
+/* === offer item === */
+.offer-item {
+    position: relative;
+    color: #625f5f;
+}
+.offer-item .item-name {
+    color: #000;
+}
+.offer-item .item-number {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #777;
+}
+.offer-item .ap {
+    margin-top: 10px;
+}
+.offer-item span.price {
+    margin-left: 3rem;
+}
+.offer-item .offer {
+    margin-top: 10px;
+}
+.offer-item .offer .ap {
+    margin-top: 0rem !important;
+}
+
+.offer-item .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #777;
+}
+.offer-item .status {
+    margin-top: 10px;
+}
+.offer-item .status span {
+    color: #777;
+    font-size: 0.96rem;
+}
+
+/* === Order Summary === */
+.order_summary {
+    padding: 1rem 1.4rem;
+}
+.order_summary h4.title {
+    font-size: 1.1rem;
+    color: #484848;
+    letter-spacing: 0.2px;
+}
+.order_summary .sub_total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #777;
+}
+.order_summary .sub_total .sub_total_price {
+    color: #000;
+}
+.order_summary .total {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.order_summary .total .total_price {
+    color: #d40e2f;
+    font-size: 1.2rem;
+}
+.order_summary button {
+    background: #d40e2f;
+    color: #eee;
+    border: 2px solid #d40e2f;
+    margin-top: 20px;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 1rem;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+}
+
+/* === Card Item === */
+/* Popup */
+.cart .title {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+.cart .cart_item {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+.cart .cart_item:last-child {
+    border-bottom: none !important;
+}
+.cart .cart_item .qty .qty_input {
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+}
+.cart .cart_item .qty span {
+    border: 4px solid transparent;
+    color: #9e9e9e;
+    background-color: #eff0f5;
+    padding: 0px 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.cart .cart_item .trash {
+    color: #9e9e9e;
+    width: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px !important;
+}
+.cart .cart_item .trash i {
+    font-size: 0.9rem;
+}
+
+/* === Custom Popup === */
+.modal-header {
+    border-bottom: none !important;
+}
+.modal-body h4.modal_title {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: #4f5a63;
+    margin-top: -30px;
+    width: 95%;
+}
+.custom-popup__content {
+    flex: 1;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4f5a63;
+    margin: 20px 0px;
+}
+.custom-popup__content .main-content {
+    display: flex;
+    /*justify-content: space-between;*/
+}
+.custom-popup__content .main-content a {
+    color: #cb1129;
+}
+.custom-popup__content .main-content div {
+    margin-right: 15px;
+}
+.custom-popup__content .quantity {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+}
+.custom-popup__content .quantity button {
+    background: #eee;
+    color: #000;
+    font-size: 16px;
+    padding: 7px 10px;
+    border-radius: 0px !important;
+    border: 1px solid #eee;
+}
+.custom-popup__content .quantity input[type="text"] {
+    padding: 0px;
+    /*background: #eee;*/
+    color: #777;
+    min-width: 30px;
+    max-width: 60px;
+    padding: 8px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+.custom-popup__content .quantity .qty {
+    margin-right: 10px;
+}
+.custom-popup__content button.add-to-cart {
+    margin-top: 30px;
+    padding: 6px 16px;
+    border: 1px solid #d60926;
+    background: #d60926;
+    color: #eee;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+
+.cart_menu ul {
+    text-align: right;
+    margin-right: 30px;
+    margin-bottom: 0px;
+}
+.cart_menu ul li {
+    display: inline-block;
+    color: #db0926;
+}
+.cart_menu ul li span {
+    font-size: 0.6rem;
+    background: #db0926;
+    color: #eee;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 5px;
+    display: inline-block;
+    line-height: 5px;
+}
+
+/* === Product List === */
+.cart h4.title {
+    color: #484848;
+}
+.product_list table .cart_name {
+    width: 70%;
+    padding-bottom: 20px !important;
+}
+.product_list table .cart_name span {
+    font-size: 0.8rem;
+}
+.product_list table tr {
+    border-bottom: 1px solid #eee;
+}
+.product_list table span {
+    display: block;
+    color: #4f5a63;
+}
+.product_list table .quantity {
+    text-align: center;
+}
+.product_list table .quantity span {
+    display: flex;
+    align-items: center;
+}
+.product_list table .quantity span.p-btn {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    background: #e1e1e1;
+}
+.product_list table .quantity span.p-value {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* === Breadcrumb === */
+#breadcrumb {
+    text-align: left;
+    font-weight: 400;
+    padding: 2.5rem;
+    color: #fff;
+    background: #eee;
+    /* background: url(../img/breadcrumb-bg.webp)no-repeat center center; */
+    opacity: 0.7;
+    background: linear-gradient(
+            0deg,
+            rgba(2, 173, 231, 0.5),
+            rgba(2, 173, 231, 0.5)
+        ),
+        url(../img/breadcrumb-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#breadcrumb .breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#breadcrumb .breadcrumb h1 {
+    font-weight: 300;
+    font-size: 4rem;
+}
+/* === App === */
+#app {
+    background: #fff;
+    padding: 2rem;
+}
+
+/* === Shipping Form === */
+form.shipping-form {
+    /* width: 75%;
+    margin: 0 auto; */
+}
+form.shipping-form h5 {
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    font-size: 1.4rem;
+}
+form.shipping-form input[readonly] {
+    max-width: 70px;
+    padding-right: 5px;
+    text-align: right;
+    background: transparent;
+    border: none;
+}
+form.shipping-form input[readonly]:focus,
+form.shipping-form input[readonly]:hover {
+    border-color: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+form.shipping-form .form-control {
+    border-radius: 0px;
+}
+form.shipping-form .form-control:focus,
+form.shipping-form .form-control:hover {
+    color: #212529;
+    background-color: #fff;
+    border-color: none !important;
+    border: 1px solid #ced4da !important;
+    outline: 0;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
+form.shipping-form select > option {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font: normal 16px/22px Arial, Sans-Serif;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+/* === Button === */
+form.shipping-form .button-box {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+form.shipping-form button[type="submit"] {
+    padding: 8px 20px;
+    border-radius: 0px;
+}
+/* =========================================================================
+    Shipping  Form
+============================================================================ */
+.shipping-form table tr td {
+    border: none;
+    padding: 10px 5px;
+    color: rgb(139, 137, 137);
+}
+.shipping-form table tr th {
+    border: none;
+}
+.shipping-form table tr td:nth-child(2),
+.shipping-form table tr th:nth-child(2),
+.shipping-form table tr th:nth-child(3),
+.shipping-form table tr td:nth-child(3) {
+    text-align: center;
+    min-width: 70px;
+}
+.shipping-form table tr.total td:first-child {
+    color: #777;
+    text-align: right;
+    /* padding: 0px; */
+}
+/* ==========================================================================
+    Footer 
+ ============================================================================ */
+footer {
+    background: #201f16;
+    padding-top: 70px;
+    color: #c5c5c5;
+}
+
+footer .footer-logo {
+    margin-bottom: 30px;
+}
+footer .footer_info {
+    font-weight: 500;
+}
+footer .footer_info span {
+    display: block;
+    color: #b5b5b5;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+footer .copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 14px 0 10px;
+    margin-top: 40px;
+    color: #b5b5b5;
+    font-size: 0.9rem;
+}
+footer .copyright a {
+    color: #3399ff;
+    text-decoration: none;
+}
+footer .fallow-us {
+    text-align: right;
+}
+footer .fallow-us a {
+    color: #b5b5b5;
+    padding: 2px;
+}
+footer .fallow-us a:hover {
+    color: #fff;
+}
+
+/* === Button to Top === */
+#button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 40px;
+    color: #fff;
+}
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+#button:active {
+    background-color: #555;
+}
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}

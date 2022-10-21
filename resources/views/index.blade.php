@@ -1,0 +1,1 @@
+Welcome {{auth()->user()->name}}
