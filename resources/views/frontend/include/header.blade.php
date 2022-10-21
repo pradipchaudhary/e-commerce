@@ -106,6 +106,39 @@
                                 <span class="text-number">Account</span>
                                 <span class="number-text"> sign in </span>
                             </div>
+                            @if (auth()->user() == null)
+                                <a href="{{ url('/register') }}">Register </a>/
+                                <a href="{{ url('/login') }}">Sign in</a>
+                            @else
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        {{ 'Welcome ' . auth()->user()->name }}
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item"
+                                                href="{{ !auth()->user()->hasRole(config('CONSTANT.USER_ROLE'))? url('home'): route('user.dashboard') }}"
+                                                style="color: black !important;">Order History</a></li>
+                                        @if (auth()->user()->hasRole(config('CONSTANT.USER_ROLE')))
+                                            <li><a class="dropdown-item" href="{{ route('user.profile') }}"
+                                                    style="color: black !important;">Profile</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('user.dashboard.offer') }}"
+                                                    style="color: black !important;">Offer</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="{{ route('user.dashboard.change_password') }}"
+                                                    style="color: black !important;">Password Change</a></li>
+                                        @endif
+                                    </ul>
+                                    <a onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();"
+                                        class="mx-2" style="cursor:pointer !important;">Logout
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            class="d-none">
+                                            @csrf
+                                        </form>
+                                    </a>
+                                </div>
+                            @endif
                         </li>
                     </div>
                     @if (auth()->user() != null)

@@ -201,11 +201,13 @@ header .header .logo .text h4 {
     color: #c8132c;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 header .header .logo .text span {
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-size: 0.65rem;
+    font-weight: 700;
+    display: block;
+    margin-top: -4px;
 }
 header .header .search_box {
     display: flex;
